@@ -4,7 +4,7 @@
 
 **เสนอต่อ:** องค์การบริหารส่วนจังหวัดนครราชสีมา (อบจ.นครราชสีมา) และหอการค้าจังหวัดนครราชสีมา (Korat NCC)
 
-**จัดทำโดย:** Digitalmedia Outsource Solution Co., Ltd. (DOS)
+**จัดทำโดย:** Digitalmedia Outsource Solution Co., Ltd. (DOSX)
 
 **วันที่:** 2 มกราคม 2026
 
@@ -33,7 +33,7 @@
 
 ## 1. บทสรุปผู้บริหาร (Executive Summary)
 
-### SITUATION (สถานการณ์)
+### สถานการณ์
 
 จังหวัดนครราชสีมามีศักยภาพทางเศรษฐกิจสูง เป็นศูนย์กลางการค้าของภาคตะวันออกเฉียงเหนือ และมีเป้าหมายสู่การเป็นเมืองอัจฉริยะ (Smart City) แต่การขับเคลื่อนเศรษฐกิจยังขาดเครื่องมือดิจิทัลที่เชื่อมโยงทุกภาคส่วนเข้าด้วยกัน ทั้ง:
 
@@ -41,14 +41,14 @@
 - **ภาคเอกชน (หอการค้าโคราช):** สมาชิก SMEs ต้องการระบบ Shared Loyalty CRM ร่วมกัน เพื่อเพิ่มอำนาจต่อรองและลดต้นทุนการพัฒนาเทคโนโลยี
 - **ประชาชนและผู้ประกอบการ:** ต้องการแรงจูงใจในการใช้บริการท้องถิ่น และช่องทางการเข้าถึงสิทธิประโยชน์อย่างเท่าเทียม
 
-### COMPLICATION (ปัญหาและข้อจำกัด)
+### ปัญหาและข้อจำกัด
 
 1. **การแยกส่วนของข้อมูล (Data Fragmentation):** ข้อมูลพฤติกรรมผู้บริโภคกระจัดกระจายอยู่ในแต่ละหน่วยงาน ไม่สามารถนำมาวิเคราะห์เชิงบูรณาการได้
 2. **ต้นทุนสูงสำหรับ SMEs:** ร้านค้าขนาดเล็กไม่มีทรัพยากรในการพัฒนาระบบ Digital Loyalty ของตัวเอง (ลงทุนเฉลี่ย 500,000–2,000,000 บาทต่อระบบ)
 3. **ขาดเครื่องมือวัดผล (Lack of Measurability):** โครงการส่งเสริมต่างๆ ไม่สามารถติดตามผลลัพธ์ได้อย่างแม่นยำ ทำให้การจัดสรรงบประมาณไม่มีประสิทธิภาพ
 4. **Digital Divide:** ผู้ประกอบการในต่างอำเภอขาดความรู้และเครื่องมือในการใช้เทคโนโลยี
 
-### RESOLUTION (การแก้ปัญหา)
+### การแก้ปัญหา
 
 **KueKan (คือกัน)** คือ **โครงสร้างพื้นฐานดิจิทัลทางเศรษฐกิจ (Digital Economic Infrastructure)** ที่ออกแบบมาเพื่อเป็นแพลตฟอร์มกลางในการเชื่อมโยงทุกภาคส่วนในจังหวัดนครราชสีมา โดย:
 
@@ -56,7 +56,7 @@
 - **สำหรับหอการค้าโคราช:** เป็นระบบ Shared Loyalty CRM ให้สมาชิก SMEs สามารถแข่งขันได้เทียบเท่าธุรกิจขนาดใหญ่
 - **สำหรับประชาชนและนักท่องเที่ยว:** เป็นช่องทางรับสิทธิประโยชน์และสะสมรางวัลผ่านกิจกรรมที่สร้างคุณค่า (Value‑Based Activities)
 
-### ข้อเสนอหลัก (Key Proposal)
+### ข้อเสนอหลัก
 
 **การร่วมมือระหว่าง อบจ.นครราชสีมา และหอการค้าโคราช ในการพัฒนาแพลตฟอร์ม KueKan** จะสร้างมูลค่าทางเศรษฐกิจและสังคม ดังนี้:
 
@@ -71,18 +71,18 @@
 
 ---
 
-## 2. สถานการณ์และโอกาส (Situation & Opportunity)
+## 2. สถานการณ์และโอกาส
 
 ### 2.1 การวิเคราะห์ตลาดนครราชสีมา
 
-### ก) ขนาดตลาด (Market Size)
+### ก) ขนาดตลาด
 
 - **ประชากรทั้งจังหวัด:** ประมาณ 2.7 ล้านคน (อันดับ 3 ของประเทศ) [¹]
 - **ประชากรในเขตเมือง:** ประมาณ 500,000 คน (กลุ่มเป้าหมายหลัก) [¹]
 - **นักท่องเที่ยวต่อปี:** 6–8 ล้านคน (ข้อมูลปี 2562 ก่อน COVID, ปัจจุบันอยู่ในช่วงฟื้นตัว) [²]
 - **มูลค่าเศรษฐกิจท่องเที่ยว:** 25,000–30,000 ล้านบาทต่อปี (ปี 2562) [²]
 
-### ข) โอกาสทางเศรษฐกิจ (Economic Opportunity)
+### ข) โอกาสทางเศรษฐกิจ
 
 **การเติบโตของตลาด Loyalty Program ในไทย:**
 
@@ -95,7 +95,7 @@
 - งบประมาณ Digital Transformation ของ อปท. มีแนวโน้มเพิ่มขึ้นตามนโยบาย Digital Thailand และ Smart City [⁵]
 - ความต้องการเครื่องมือวัดผล Smart City KPIs เพิ่มสูงขึ้นอย่างต่อเนื่อง
 
-### 2.2 ความสอดคล้องกับยุทธศาสตร์ทั้งสององค์กร (Strategic Alignment)
+### 2.2 ความสอดคล้องกับยุทธศาสตร์ทั้งสององค์กร
 
 ### อบจ.นครราชสีมา: ยุทธศาสตร์ 2567–2572
 
@@ -117,23 +117,23 @@
 
 ---
 
-## 3. วิสัยทัศน์และเป้าหมายของโครงการ (Vision & Objectives)
+## 3. วิสัยทัศน์และเป้าหมายของโครงการ
 
-### 3.1 วิสัยทัศน์ (Vision Statement)
+### 3.1 วิสัยทัศน์
 
 > “ทำให้นครราชสีมาเป็นจังหวัดแรกในภาคตะวันออกเฉียงเหนือที่มีระบบนิเวศดิจิทัลทางเศรษฐกิจแบบบูรณาการ ที่เชื่อมโยงภาครัฐ ภาคเอกชน และประชาชนเข้าด้วยกัน เพื่อสร้างการเติบโตทางเศรษฐกิจอย่างยั่งยืนและเท่าเทียม”
 > 
 
-### 3.2 เป้าหมายหลัก (Primary Objectives) – SMART Framework
+### 3.2 เป้าหมายหลัก
 
-| Objective | Specific | Measurable | Achievable | Relevant | Time‑bound |
-| --- | --- | --- | --- | --- | --- |
-| O1: เพิ่มยอดขายให้ร้านค้าสมาชิก | เพิ่มยอดขายเฉลี่ยต่อร้าน | 20–30% | ใช้ Cross‑Promotion และ Gamification | สอดคล้องกับเป้าหมายหอการค้า | ภายใน 12 เดือนหลัง Launch |
-| O2: กระตุ้นการท่องเที่ยว | เพิ่มจำนวนนักท่องเที่ยวไปยังแหล่งท่องเที่ยวรอง | 15–25% | ใช้ Check‑in Missions | สอดคล้องกับ Soft Power Tourism | ภายใน 18 เดือน |
-| O3: สร้าง Data Infrastructure | เก็บข้อมูลพฤติกรรมผู้ใช้ | 30,000+ Users พร้อม Transaction Data | Platform รองรับการขยายตัว | สอดคล้องกับ Smart City Initiative | เริ่มเก็บข้อมูลตั้งแต่เดือนแรก |
+| Objective | Specific | Measurable | Achievable | Time‑bound |
+| --- | --- | --- | --- | --- |
+| O1: เพิ่มยอดขายให้ร้านค้าสมาชิก | เพิ่มยอดขายเฉลี่ยต่อร้าน | 20–30% | ใช้ Cross‑Promotion และ Gamification | ภายใน 12 เดือนหลัง Launch |
+| O2: กระตุ้นการท่องเที่ยว | เพิ่มจำนวนนักท่องเที่ยวไปยังแหล่งท่องเที่ยวรอง | 15–25% | ใช้ Check‑in Missions | ภายใน 18 เดือน |
+| O3: สร้าง Data Infrastructure | เก็บข้อมูลพฤติกรรมผู้ใช้ | 30,000+ Users พร้อม Transaction Data | Platform รองรับการขยายตัว | เริ่มเก็บข้อมูลตั้งแต่เดือนแรก |
 | O4: ลดช่องว่างทางดิจิทัล | เพิ่มจำนวนร้านค้าที่ใช้เทคโนโลยี | 500+ ร้านค้าในระบบ | LINE‑First Approach ใช้งานง่าย | ช่วยยกระดับ SMEs | ภายใน 24 เดือน |
 
-### 3.3 เป้าหมายรอง (Secondary Objectives)
+### 3.3 เป้าหมายรอง
 
 1. **สร้างวัฒนธรรมสุขภาพ:** มีผู้เข้าร่วมกิจกรรมสุขภาพผ่าน KueKan อย่างน้อย 10,000 คนต่อปี
 2. **ส่งเสริมสินค้า OTOP:** เพิ่มช่องทางจำหน่ายสินค้า OTOP ผ่านระบบแลกรางวัล
@@ -141,11 +141,11 @@
 
 ---
 
-## 4. รูปแบบความร่วมมือ (Collaboration Model)
+## 4. รูปแบบความร่วมมือ
 
-### 4.1 โครงสร้างความร่วมมือแบบ Public‑Private Partnership (PPP)
+### 4.1 โครงสร้างความร่วมมือแบบ Public‑Private Partnership
 
-### แบบจำลองการร่วมมือ (Collaboration Framework)
+### แบบจำลองการร่วมมือ
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#EEF2FF', 'primaryTextColor': '#1F2937', 'primaryBorderColor': '#4F46E5', 'lineColor': '#4F46E5', 'secondaryColor': '#E0E7FF', 'tertiaryColor': '#FAFAFA', 'fontFamily': 'IBM Plex Sans Thai, Inter, sans-serif'}}}%%
@@ -182,7 +182,7 @@ graph TD
     style Tourist fill:#E0E7FF,stroke:#818CF8
 ```
 
-### 4.2 บทบาทและความรับผิดชอบ (Roles & Responsibilities) – MECE
+### 4.2 บทบาทและความรับผิดชอบ
 
 ### A) องค์การบริหารส่วนจังหวัดนครราชสีมา (The Enabler & Policy Host)
 
@@ -204,7 +204,7 @@ graph TD
 | ด้าน Privilege | ประสานงานธุรกิจขนาดใหญ่เพื่อมอบ Exclusive Rewards | Premium Rewards สำหรับกลุ่ม VIP Tier |
 | ด้าน Innovation | ให้กลุ่ม YEC เป็น Innovation Lab ทดลองฟีเจอร์ใหม่ | Beta Testing Group ≥ 50 คน |
 
-### C) DOS (Technology Partner & System Integrator)
+### C) DOSX (Technology Partner & System Integrator)
 
 | ด้าน | ความรับผิดชอบ | ผลลัพธ์ที่คาดหวัง |
 | --- | --- | --- |
@@ -213,18 +213,18 @@ graph TD
 | ด้านฝึกอบรม | อบรมทีมงาน อบจ. และหอการค้าในการใช้งาน Admin Console | Certified Users ≥ 20 คน |
 | ด้านที่ปรึกษา | ให้คำปรึกษาด้าน Gamification และ Customer Engagement | Quarterly Strategy Review ต่อเนื่อง |
 
-### 4.3 โครงสร้างการบริหารโครงการ (Governance Structure)
+### 4.3 โครงสร้างการบริหารโครงการ
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#EEF2FF', 'primaryTextColor': '#1F2937', 'primaryBorderColor': '#4F46E5', 'lineColor': '#4F46E5', 'secondaryColor': '#E0E7FF', 'tertiaryColor': '#FAFAFA', 'fontFamily': 'IBM Plex Sans Thai, Inter, sans-serif'}}}%%
 graph TD
     subgraph Steering [Steering Committee – คณะกรรมการ]
-        SC_Members[• ผู้บริหาร อบจ. 2 ท่าน<br/>• ผู้บริหารหอการค้า 2 ท่าน<br/>• ตัวแทน DOS 1 ท่าน]
+        SC_Members[• ผู้บริหาร อบจ. 2 ท่าน<br/>• ผู้บริหารหอการค้า 2 ท่าน<br/>• ตัวแทน DOSX 1 ท่าน]
     end
 
     subgraph Execution [Execution & Development]
-        WG[Working Group ทีมปฏิบัติการ<br/>• อบจ. 3 คน<br/>• หอการค้า 3 คน<br/>• DOS PM 1 คน]
-        Tech[Technical Team DOS<br/>• PM • Devs<br/>• Designer • QA]
+        WG[Working Group ทีมปฏิบัติการ<br/>• อบจ. 3 คน<br/>• หอการค้า 3 คน<br/>• DOSX PM 1 คน]
+        Tech[Technical Team DOSX<br/>• PM • Devs<br/>• Designer • QA]
     end
 
     Steering -->|กำหนดทิศทาง / อนุมัติ| WG
@@ -242,11 +242,11 @@ graph TD
 - Working Group: ประชุมทุกสัปดาห์ (Operational Execution)
 - Technical Team: Daily Standup (Agile Development)
 
-### 4.4 โมเดลการแบ่งผลประโยชน์ (Benefit Sharing Model)
+### 4.4 โมเดลการแบ่งผลประโยชน์
 
 ### การจัดสรรผลประโยชน์จาก Platform (Revenue / Impact Sharing)
 
-| ประเภทผลประโยชน์ | อบจ. | หอการค้า | DOS | หมายเหตุ |
+| ประเภทผลประโยชน์ | อบจ. | หอการค้า | DOSX | หมายเหตุ |
 | --- | --- | --- | --- | --- |
 | Data Insights | 100% | 60% | 0% | อบจ. ได้ Full Access, หอการค้าได้เฉพาะส่วน Business |
 | Brand Value | 50% | 50% | 0% | Co‑Branding ระหว่าง อบจ. และหอการค้า |
@@ -255,9 +255,9 @@ graph TD
 
 ---
 
-## 5. โซลูชันและสถาปัตยกรรม (Solution Architecture)
+## 5. โซลูชันและสถาปัตยกรรม
 
-### 5.1 ภาพรวมของแพลตฟอร์ม (Platform Overview)
+### 5.1 ภาพรวมของแพลตฟอร์ม
 
 **KueKan (คือกัน)** เป็น **Loyalty & Rewards Platform with Gamification** ที่ออกแบบมาเพื่อ:
 
@@ -266,9 +266,9 @@ graph TD
 3. **Data Collection:** เก็บข้อมูลพฤติกรรมผู้ใช้และการใช้จ่าย เพื่อการวิเคราะห์เชิงลึกและการตัดสินใจเชิงนโยบาย
 4. **Economic Circulation:** ทำให้เม็ดเงินหมุนเวียนภายในจังหวัด (Local Economy) มากที่สุด
 
-### 5.2 ส่วนประกอบหลักของระบบ (System Components)
+### 5.2 ส่วนประกอบหลักของระบบ
 
-### A) Customer Mobile Site (เว็บแอปสำหรับผู้ใช้ทั่วไป)
+### A) เว็บแอปสำหรับผู้ใช้ทั่วไป (Customer Mobile Site)
 
 **แนวคิด:** LINE‑First Approach – ผู้ใช้เข้าถึงผ่าน LINE Official Account โดยไม่ต้องดาวน์โหลดแอปใหม่
 
@@ -292,7 +292,7 @@ graph TD
     - ระดับ Exclusive / VIP (ได้รับสิทธิ์พิเศษและแต้มคูณเพิ่ม)
     - ระบบ Auto‑Upgrade ตามแต้มสะสมและพฤติกรรมใช้งาน
 
-### B) Partner Mobile Site (เว็บแอปสำหรับร้านค้า)
+### B) เว็บแอปสำหรับร้านค้า (Partner Mobile Site)
 
 **แนวคิด:** อินเทอร์เฟซเรียบง่าย ใช้งานได้ทันที ลดภาระการฝึกอบรม
 
@@ -309,7 +309,7 @@ graph TD
     - ภารกิจที่ลูกค้านิยมทำที่ร้าน (Top Missions)
     - รองรับการ Export รายงานเป็นไฟล์ Excel
 
-### C) Admin Console (ระบบจัดการหลังบ้าน)
+### C) ระบบจัดการหลังบ้าน (Admin Console)
 
 **แนวคิด:** Command Center สำหรับบริหาร Ecosystem ทั้งหมดของจังหวัด
 
@@ -350,7 +350,7 @@ graph TD
     - Cohort Analysis เปรียบเทียบกลุ่มผู้ใช้ตามช่วงเวลาและพฤติกรรม
     - ROI Calculator สำหรับประเมินผลตอบแทนของแต่ละแคมเปญ
 
-### 5.3 สถาปัตยกรรมทางเทคนิค (Technical Architecture)
+### 5.3 สถาปัตยกรรมทางเทคนิค
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#EEF2FF', 'primaryTextColor': '#1F2937', 'primaryBorderColor': '#4F46E5', 'lineColor': '#4F46E5', 'secondaryColor': '#E0E7FF', 'tertiaryColor': '#FAFAFA', 'fontFamily': 'IBM Plex Sans Thai, Inter, sans-serif'}}}%%
@@ -404,7 +404,7 @@ graph TD
 - **Mobile:** LINE LIFF (LINE Frontend Framework)
 - **DevOps:** CI/CD Pipeline, Docker, Kubernetes
 
-### 5.4 ความแตกต่างจากคู่แข่ง (Competitive Differentiation)
+### 5.4 ความแตกต่างจากคู่แข่ง
 
 | ประเด็น | KueKan | Loyalty Apps ทั่วไป (เช่น TRUE, ดีแทค) |
 | --- | --- | --- |
@@ -417,11 +417,11 @@ graph TD
 
 ---
 
-## 6. ประโยชน์สำหรับผู้มีส่วนได้ส่วนเสีย (Stakeholder Value)
+## 6. ประโยชน์สำหรับผู้มีส่วนได้ส่วนเสีย
 
 ### 6.1 ประโยชน์สำหรับองค์การบริหารส่วนจังหวัดนครราชสีมา
 
-### ก) วัดผลความสำเร็จโครงการได้จริง (Measurable Impact)
+### ก) วัดผลความสำเร็จโครงการได้จริง
 
 **ปัญหาเดิม:** โครงการท่องเที่ยวหรือโครงการส่งเสริมสุขภาพมักวัดผลได้เพียง “จำนวนคนมางาน” แต่ไม่ทราบว่า:
 
@@ -454,13 +454,13 @@ Return Rate: 42% (กลับมาเที่ยวซ้ำภายใน 3
 
 </aside>
 
-### ข) ภาพลักษณ์เมืองอัจฉริยะ (Smart City Branding)
+### ข) ภาพลักษณ์เมืองอัจฉริยะ
 
 - ใช้ KueKan เป็น Showcase ในงาน Smart City Thailand เพื่อดึงดูดนักลงทุน
 - สร้างความเชื่อมั่นให้ประชาชนในการใช้เทคโนโลยีของภาครัฐ
 - สอดคล้องและสนับสนุนนโยบายของกระทรวง DE/MDES ด้าน Digital Economy & Smart City
 
-### ค) การกระจายรายได้สู่ชุมชน (Economic Distribution)
+### ค) การกระจายรายได้สู่ชุมชน
 
 **กลไก:** ออกแบบรางวัลให้แลกได้เฉพาะที่ร้านค้าชุมชนหรือร้าน OTOP
 
@@ -472,7 +472,7 @@ Return Rate: 42% (กลับมาเที่ยวซ้ำภายใน 3
 - เพิ่มรายได้ให้ร้าน OTOP เฉลี่ย 15–20% ในปีแรก
 - ลดการรั่วไหลของเม็ดเงินออกนอกจังหวัดอย่างมีนัยสำคัญ
 
-### ง) ช่องทางสื่อสารทางตรง (Direct Engagement Channel)
+### ง) ช่องทางสื่อสารทางตรง
 
 - ส่งข้อความแจ้งเตือนภัยพิบัติผ่าน LINE Push ถึงประชาชน ≥ 30,000 คนได้ทันที
 - ประชาสัมพันธ์นโยบายหรือโครงการใหม่เชิงเจาะจงกลุ่มเป้าหมาย
@@ -480,7 +480,7 @@ Return Rate: 42% (กลับมาเที่ยวซ้ำภายใน 3
 
 ### 6.2 ประโยชน์สำหรับหอการค้าจังหวัดนครราชสีมา
 
-### ก) Big Data และอำนาจต่อรอง (Data‑Driven Bargaining Power)
+### ก) ข้อมูลและอำนาจต่อรอง
 
 **สถานะปัจจุบัน:** หอการค้ายังไม่มีฐานข้อมูลพฤติกรรมผู้บริโภคในจังหวัดเชิงลึก
 
@@ -497,7 +497,7 @@ Return Rate: 42% (กลับมาเที่ยวซ้ำภายใน 3
 - ใช้ข้อมูลจริงต่อรองกับห้างสรรพสินค้ารายใหญ่เพื่อจัด “Korat Week” หรือแคมเปญร่วม
 - นำเสนอข้อเสนอเชิงนโยบายต่อภาครัฐด้วยฐานข้อมูลจริง (Data‑Driven Policy Advocacy)
 
-### ข) เครื่องมือที่จับต้องได้สำหรับสมาชิก (Tangible Member Benefit)
+### ข) เครื่องมือที่จับต้องได้สำหรับสมาชิก
 
 **ก่อนมี KueKan:**
 
@@ -567,7 +567,7 @@ graph LR
 | New Customer Acquisition | พึ่งพาปากต่อปากเป็นหลัก | เข้าถึงลูกค้าจากทั้ง Network ของแพลตฟอร์ม |
 | Technology Cost | 500K–2M บาท หากพัฒนาระบบเอง | 0 บาท (ใช้ Shared Platform) |
 
-### 6.4 ประโยชน์สำหรับประชาชนและนักท่องเที่ยว (End Users)
+### 6.4 ประโยชน์สำหรับประชาชนและนักท่องเที่ยว
 
 ### ก) ประชาชนจังหวัดนครราชสีมา
 
@@ -583,9 +583,9 @@ graph LR
 
 ---
 
-## 7. แผนการดำเนินงาน (Implementation Plan)
+## 7. แผนการดำเนินงาน
 
-### 7.1 ภาพรวมการดำเนินงาน (Project Phases)
+### 7.1 ภาพรวมการดำเนินงาน
 
 <aside>
 
@@ -634,10 +634,10 @@ Month 9: Launch & Early Operations
 
 | กิจกรรม | เป้าหมาย | ผู้รับผิดชอบ |
 | --- | --- | --- |
-| Partner Onboarding | 100 ร้านค้าแรก | หอการค้า (Lead) + DOS (Support) |
+| Partner Onboarding | 100 ร้านค้าแรก | หอการค้า (Lead) + DOSX (Support) |
 | Rewards Catalog | 50+ รางวัล (OTOP, Vouchers, บริการสาธารณะ) | อบจ. (Supply) + หอการค้า (Coordinate) |
 | Mission Creation | 20+ Missions พร้อมใช้งานจริง | Working Group |
-| Content Production | ภาพ, คำบรรยาย, และวิดีโอแนะนำการใช้งาน | DOS Design Team |
+| Content Production | ภาพ, คำบรรยาย, และวิดีโอแนะนำการใช้งาน | DOSX Design Team |
 
 ### C) Testing & Quality Assurance (6 สัปดาห์)
 
@@ -716,11 +716,11 @@ gantt
 
 ---
 
-## 8. งบประมาณและผลตอบแทน (Budget & ROI)
+## 8. งบประมาณและผลตอบแทน
 
-### 8.1 งบประมาณรวม (Total Budget Breakdown)
+### 8.1 งบประมาณรวม
 
-### A) งบพัฒนาระบบ (Development Cost)
+### A) งบพัฒนาระบบ
 
 | รายการ | POC | MVP | รวม (บาท) | หมายเหตุ |
 | --- | --- | --- | --- | --- |
@@ -732,7 +732,7 @@ gantt
 | Training & Support | 100,000 | 200,000 | 300,000 | User Manual, Training Sessions |
 | **รวมค่าพัฒนา** | **1,000,000** | **3,400,000** | **4,400,000** |  |
 
-### B) งบดำเนินงาน (Operational Cost – ปีแรก)
+### B) งบดำเนินงาน(ปีแรก)
 
 | รายการ | ต่อเดือน (บาท) | ต่อปี (บาท) | หมายเหตุ |
 | --- | --- | --- | --- |
@@ -747,35 +747,35 @@ gantt
 > **หมายเหตุ:** ค่า Maintenance ปีแรกฟรี (รวมใน Development Cost แล้ว) ทำให้ค่าใช้จ่ายจริงปีแรกอยู่ที่ประมาณ 960,000 บาท
 > 
 
-### C) สรุปงบประมาณทั้งหมด (Total Investment)
+### C) สรุปงบประมาณทั้งหมด
 
 | รายการ | จำนวน (บาท) |
 | --- | --- |
 | Development (POC + MVP) | 4,400,000 |
 | Operational Cost (ปีแรก) | 960,000 |
 | Contingency (10%) | 440,000 |
-| รวมทั้งหมด (Year 1) | 5,800,000 |
+| รวมทั้งหมด (ปีแรก) | 5,800,000 |
 
 > **Recommendation:** จัดงบประมาณรวม 6,000,000 บาท เพื่อเผื่อความปลอดภัยและความยืดหยุ่นในการดำเนินงาน
 > 
 
-### 8.2 การแบ่งงบประมาณระหว่างองค์กร (Budget Allocation)
+### 8.2 การแบ่งงบประมาณระหว่างองค์กร
 
 | องค์กร | % | จำนวน (บาท) | เหตุผล |
 | --- | --- | --- | --- |
 | อบจ.นครราชสีมา | 40–50% | 2,400,000–3,000,000 | ลงทุนในส่วน Public Good (Tourism, Health, Data Infrastructure) |
 | หอการค้าโคราช | 50–60% | 3,000,000–3,600,000 | ลงทุนในส่วน Commercial (SME Benefits, Business Data) |
 
-**ทางเลือกทางการเงิน (Financing Options):**
+**ทางเลือกทางการเงิน :**
 
 1. **Co‑Investment Model:** แบ่งลงทุนร่วมกันสัดส่วน 50/50
 2. **Sponsorship Model:** หาสปอนเซอร์ (เช่น ผู้ประกอบการรายใหญ่) เพื่อช่วยลดภาระงบประมาณ
 3. **Phased Investment:** อบจ. สนับสนุนงบ POC ก่อน ส่วนหอการค้าลงทุนเพิ่มในช่วง MVP หลังพิสูจน์ผลแล้ว
 4. **Revenue Sharing Model:** ลงทุนร่วมกันตั้งแต่แรก แล้วแบ่งรายได้ในอนาคตจาก Sponsorship / Ads
 
-### 8.3 การคำนวณผลตอบแทน (ROI Analysis)
+### 8.3 การคำนวณผลตอบแทน
 
-### A) ผลตอบแทนสำหรับหอการค้า (Direct ROI for NCC)
+### A) ผลตอบแทนสำหรับหอการค้า
 
 **Assumptions (Conservative):**
 
@@ -795,7 +795,7 @@ gantt
 > การคำนวณอิง **Net Incremental Profit** ไม่ใช่ Gross Revenue และเน้น Value Creation ให้สมาชิกหอการค้า ไม่ใช่รายได้ของหอการค้าโดยตรง
 > 
 
-### B) ผลตอบแทนสำหรับ อบจ. (Social & Economic Impact for PAO)
+### B) ผลตอบแทนสำหรับ อบจ.
 
 **Assumptions (Conservative):**
 
@@ -813,7 +813,7 @@ gantt
 > ใช้ Net Economic Value เป็นฐาน ไม่ใช่ Gross Tourism Revenue และไม่รวม Data Value ซึ่งมีมูลค่าสูงแต่ประเมินเป็นตัวเลขยาก
 > 
 
-### C) ผลตอบแทนรวม (Total Economic Value Created)
+### C) ผลตอบแทนรวม
 
 **Year 1 Impact (Conservative Estimates):**
 
@@ -844,7 +844,7 @@ gantt
 
 ---
 
-## 9. การวัดผลและ KPIs (Metrics & KPIs)
+## 9. การวัดผลและ KPIs
 
 ### 9.1 KPIs หลัก (Primary KPIs) – Balanced Scorecard Approach
 
@@ -937,7 +937,7 @@ gantt
 
 ---
 
-## 10. การบริหารความเสี่ยง (Risk Management)
+## 10. การบริหารความเสี่ยง
 
 ### A) Technology Risks (ความเสี่ยงด้านเทคนิค)
 
@@ -995,9 +995,9 @@ gantt
 
 ---
 
-## 11. ข้อเสนอแนะและขั้นตอนถัดไป (Recommendations & Next Steps)
+## 11. ข้อเสนอแนะและขั้นตอนถัดไป
 
-### 11.1 ข้อเสนอแนะเชิงกลยุทธ์ (Strategic Recommendations)
+### 11.1 ข้อเสนอแนะเชิงกลยุทธ์
 
 ### 1) เริ่มต้นด้วย “Quick Win” Campaigns
 
@@ -1015,7 +1015,7 @@ gantt
 - ให้สิทธิพิเศษ เช่น VIP Tier ตลอดชีพ
 - เชิญ YEC นำเสนอ Case Studies ในงาน Roadshow ต่างๆ
 
-### 3) วางรากฐานเพื่อความยั่งยืนระยะยาว (Long‑Term Sustainability)
+### 3) วางรากฐานเพื่อความยั่งยืนระยะยาว
 
 | ช่องทางรายได้ | เริ่มได้เมื่อไหร่ | Potential (บาท/ปี) | หมายเหตุ |
 | --- | --- | --- | --- |
@@ -1031,15 +1031,15 @@ gantt
 | สัปดาห์ | กิจกรรม | ผู้รับผิดชอบ | Deliverable |
 | --- | --- | --- | --- |
 | W1 | Kick‑off Meeting, ลงนาม MOU | Steering Committee | Signed MOU, Project Charter |
-| W2 | Requirements Workshop, Stakeholder Interviews | DOS PM + Working Group | Detailed Requirements Document (100+ หน้า) |
-| W3 | Design Sprint, Technical Architecture Review | DOS Design + Dev Team | Wireframes (50+ Screens), Tech Spec |
-| W4 | Partner Outreach (Pilot), Content Planning | หอการค้า + DOS | 10 ร้านค้า Pilot, Content Calendar |
+| W2 | Requirements Workshop, Stakeholder Interviews | DOSX PM + Working Group | Detailed Requirements Document (100+ หน้า) |
+| W3 | Design Sprint, Technical Architecture Review | DOSX Design + Dev Team | Wireframes (50+ Screens), Tech Spec |
+| W4 | Partner Outreach (Pilot), Content Planning | หอการค้า + DOSX | 10 ร้านค้า Pilot, Content Calendar |
 
 ### Phase 2: เดือนที่ 2 (60 วัน) – Build
 
 | สัปดาห์ | กิจกรรม | ผู้รับผิดชอบ | Deliverable |
 | --- | --- | --- | --- |
-| W5–W6 | POC Development, LINE Integration | DOS Dev Team | Working Prototype (ฟีเจอร์หลัก) |
+| W5–W6 | POC Development, LINE Integration | DOSX Dev Team | Working Prototype (ฟีเจอร์หลัก) |
 | W7 | Internal Testing, Feedback Loop | Working Group | Bug Reports, Improvement List |
 | W8 | Pilot Program (Event), เก็บผู้ใช้กลุ่มแรก ≥ 100 คน | อบจ. + หอการค้า | Pilot Report, Go/No‑Go Decision |
 
@@ -1047,11 +1047,11 @@ gantt
 
 | สัปดาห์ | กิจกรรม | ผู้รับผิดชอบ | Deliverable |
 | --- | --- | --- | --- |
-| W9–W10 | เริ่ม MVP Development, Partner Onboarding (100 ร้านแรก) | DOS + หอการค้า | 100 Partners Onboarded |
+| W9–W10 | เริ่ม MVP Development, Partner Onboarding (100 ร้านแรก) | DOSX + หอการค้า | 100 Partners Onboarded |
 | W11 | ตั้งค่า Rewards Catalog, Mission Creation | อบจ. + Working Group | 50 Rewards, 20 Missions พร้อมใช้งาน |
 | W12 | Quarterly Business Review (QBR), ปรับแผน | Steering Committee | Q1 Report, Adjusted Roadmap |
 
-### 11.3 การตัดสินใจสำคัญในเดือนแรก (Critical Decisions – Month 1)
+### 11.3 การตัดสินใจสำคัญในเดือนแรก
 
 | ประเด็น | ตัวเลือก | Recommendation | เหตุผล |
 | --- | --- | --- | --- |
@@ -1086,7 +1086,7 @@ gantt
 
 ### C. Contact Information
 
-**DOS (Technology Partner)**
+**DOSX (Technology Partner)**
 
 - **Company:** Digitalmedia Outsource Solution Co., Ltd.
 - **Primary Contact:** Jakapong Lomvong (Tle) – Chief Operating Officer
@@ -1166,7 +1166,7 @@ gantt
 
 **จัดทำโดย:**
 
-Digitalmedia Outsource Solution Co., Ltd. (DOS)
+Digitalmedia Outsource Solution Co., Ltd. (DOSX)
 
 **ติดต่อสอบถาม:**
 
