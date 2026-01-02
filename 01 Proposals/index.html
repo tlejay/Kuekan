@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KueKan Proposal Preview</title>
+    <title>Document Preview</title>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --primary: #4F46E5;
@@ -47,7 +50,7 @@
             align-items: center;
             justify-content: space-between;
             z-index: 100;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
         }
 
         .header-left {
@@ -110,7 +113,7 @@
             background: var(--card-bg);
             border-radius: 12px;
             padding: 48px 56px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
         }
 
         /* Markdown Styles */
@@ -154,7 +157,8 @@
             color: var(--text);
         }
 
-        .content ul, .content ol {
+        .content ul,
+        .content ol {
             margin-bottom: 16px;
             padding-left: 24px;
         }
@@ -317,7 +321,9 @@
         }
 
         @keyframes spin {
-            to { transform: rotate(360deg); }
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         /* Error State */
@@ -357,31 +363,36 @@
             .header {
                 display: none;
             }
+
             .container {
                 padding: 0;
                 max-width: 100%;
             }
+
             .content {
                 box-shadow: none;
                 padding: 0;
             }
+
             .footer {
                 display: none;
             }
         }
     </style>
 </head>
+
 <body>
     <header class="header">
         <div class="header-left">
-            <span class="logo">KueKan</span>
-            <span class="subtitle">Document preview by Digitalmedia Outsource Solution</span>
+            <span class="logo" id="logo"></span>
+            <span class="subtitle" id="subtitle"></span>
         </div>
         <button class="download-btn" onclick="downloadPDF()">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-                <polyline points="7 10 12 15 17 10"/>
-                <line x1="12" y1="15" x2="12" y2="3"/>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
             </svg>
             Download as PDF
         </button>
@@ -397,15 +408,33 @@
     </main>
 
     <footer class="footer">
-        <p>KueKan Proposal Preview | Digitalmedia Outsource Solution Co., Ltd.</p>
+        <p id="footer-text"></p>
     </footer>
 
     <script>
-        const MARKDOWN_FILE = 'Proposal_KueKan_PAO_NCC_McKinsey-Shorten.md';
-        const REFRESH_INTERVAL = 3000; // 3 seconds
+        // =====================================================
+        // CONFIG - แก้ไขตรงนี้เพื่อใช้กับโปรเจคอื่น
+        // =====================================================
+        const CONFIG = {
+            PROJECT_NAME: 'KueKan',
+            COMPANY_NAME: 'Digitalmedia Outsource Solution',
+            COMPANY_FULL: 'Digitalmedia Outsource Solution Co., Ltd.',
+            MARKDOWN_FILE: 'Proposal_KueKan_PAO_NCC_McKinsey-Shorten.md',
+            REFRESH_INTERVAL: 3000, // milliseconds
+        };
+        // =====================================================
+
         let lastContent = '';
         let refreshTimer = null;
         let mermaidCounter = 0;
+
+        // Initialize page elements from config
+        function initPage() {
+            document.title = `${CONFIG.PROJECT_NAME} - Document Preview`;
+            document.getElementById('logo').textContent = CONFIG.PROJECT_NAME;
+            document.getElementById('subtitle').textContent = `Document preview by ${CONFIG.COMPANY_NAME}`;
+            document.getElementById('footer-text').textContent = `${CONFIG.PROJECT_NAME} Document Preview | ${CONFIG.COMPANY_FULL}`;
+        }
 
         // Initialize Mermaid
         mermaid.initialize({
@@ -419,7 +448,7 @@
         const renderer = new marked.Renderer();
         const originalCodeRenderer = renderer.code.bind(renderer);
 
-        renderer.code = function(code, language) {
+        renderer.code = function (code, language) {
             // Handle both object format (newer marked) and string format (older marked)
             let codeText = typeof code === 'object' ? code.text : code;
             let lang = typeof code === 'object' ? code.lang : language;
@@ -518,7 +547,7 @@
         async function loadMarkdown() {
             try {
                 // Add cache-busting parameter
-                const response = await fetch(MARKDOWN_FILE + '?t=' + Date.now());
+                const response = await fetch(CONFIG.MARKDOWN_FILE + '?t=' + Date.now());
 
                 if (!response.ok) {
                     throw new Error('Failed to load file: ' + response.status);
@@ -555,11 +584,14 @@
             }
         }
 
+        // Initialize page
+        initPage();
+
         // Initial load
         loadMarkdown();
 
         // Auto-refresh
-        refreshTimer = setInterval(loadMarkdown, REFRESH_INTERVAL);
+        refreshTimer = setInterval(loadMarkdown, CONFIG.REFRESH_INTERVAL);
 
         // Keyboard shortcut: Cmd/Ctrl + R to refresh
         document.addEventListener('keydown', (e) => {
@@ -570,4 +602,5 @@
         });
     </script>
 </body>
+
 </html>

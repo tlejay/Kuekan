@@ -148,6 +148,7 @@
 ### แบบจำลองการร่วมมือ (Collaboration Framework)
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#EEF2FF', 'primaryTextColor': '#1F2937', 'primaryBorderColor': '#4F46E5', 'lineColor': '#4F46E5', 'secondaryColor': '#E0E7FF', 'tertiaryColor': '#FAFAFA', 'fontFamily': 'IBM Plex Sans Thai, Inter, sans-serif'}}}%%
 graph TD
 
     subgraph Ecosystem [KueKan Ecosystem – Digital Economic Infrastructure]
@@ -172,6 +173,13 @@ graph TD
         Platform <--> Citizen
         Platform <--> Tourist
     end
+
+    style Platform fill:#4F46E5,stroke:#4F46E5,color:#fff
+    style PAO fill:#EEF2FF,stroke:#4F46E5
+    style NCC fill:#EEF2FF,stroke:#4F46E5
+    style Member fill:#E0E7FF,stroke:#818CF8
+    style Citizen fill:#E0E7FF,stroke:#818CF8
+    style Tourist fill:#E0E7FF,stroke:#818CF8
 ```
 
 ### 4.2 บทบาทและความรับผิดชอบ (Roles & Responsibilities) – MECE
@@ -208,6 +216,7 @@ graph TD
 ### 4.3 โครงสร้างการบริหารโครงการ (Governance Structure)
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#EEF2FF', 'primaryTextColor': '#1F2937', 'primaryBorderColor': '#4F46E5', 'lineColor': '#4F46E5', 'secondaryColor': '#E0E7FF', 'tertiaryColor': '#FAFAFA', 'fontFamily': 'IBM Plex Sans Thai, Inter, sans-serif'}}}%%
 graph TD
     subgraph Steering [Steering Committee – คณะกรรมการ]
         SC_Members[• ผู้บริหาร อบจ. 2 ท่าน<br/>• ผู้บริหารหอการค้า 2 ท่าน<br/>• ตัวแทน DOS 1 ท่าน]
@@ -221,6 +230,10 @@ graph TD
     Steering -->|กำหนดทิศทาง / อนุมัติ| WG
     Steering -->|ติดตามผล| Tech
     WG <--> |Collaborate| Tech
+
+    style SC_Members fill:#4F46E5,stroke:#4F46E5,color:#fff
+    style WG fill:#EEF2FF,stroke:#4F46E5
+    style Tech fill:#E0E7FF,stroke:#818CF8
 ```
 
 **การประชุม:**
@@ -340,9 +353,8 @@ graph TD
 ### 5.3 สถาปัตยกรรมทางเทคนิค (Technical Architecture)
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#EEF2FF', 'primaryTextColor': '#1F2937', 'primaryBorderColor': '#4F46E5', 'lineColor': '#4F46E5', 'secondaryColor': '#E0E7FF', 'tertiaryColor': '#FAFAFA', 'fontFamily': 'IBM Plex Sans Thai, Inter, sans-serif'}}}%%
 graph TD
-    classDef layer fill:#f5f5f5,stroke:#666,stroke-width:1px;
-
     subgraph Frontend [Frontend Layer]
         C_App[Customer Mobile Site<br/>LINE OA]
         P_App[Partner Mobile Site<br/>Web]
@@ -372,7 +384,15 @@ graph TD
     Logic --> Data
     Logic --> External
 
-    class Frontend,API,Logic,Data,External layer;
+    style C_App fill:#EEF2FF,stroke:#4F46E5
+    style P_App fill:#EEF2FF,stroke:#4F46E5
+    style A_App fill:#EEF2FF,stroke:#4F46E5
+    style Gateway fill:#4F46E5,stroke:#4F46E5,color:#fff
+    style Engines fill:#818CF8,stroke:#4F46E5,color:#fff
+    style DB fill:#E0E7FF,stroke:#818CF8
+    style Logs fill:#E0E7FF,stroke:#818CF8
+    style Cache fill:#E0E7FF,stroke:#818CF8
+    style ThirdParty fill:#FAFAFA,stroke:#6B7280
 ```
 
 **Technology Stack:**
@@ -492,6 +512,7 @@ Return Rate: 42% (กลับมาเที่ยวซ้ำภายใน 3
 **ตัวอย่าง Case:**
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#EEF2FF', 'primaryTextColor': '#1F2937', 'primaryBorderColor': '#4F46E5', 'lineColor': '#4F46E5', 'secondaryColor': '#E0E7FF', 'tertiaryColor': '#FAFAFA', 'fontFamily': 'IBM Plex Sans Thai, Inter, sans-serif'}}}%%
 graph LR
     subgraph Before [ก่อนเข้าร่วม KueKan]
         A1[ร้านกาแฟเล็ก] -->|ไม่มีระบบ Loyalty| B1(ลูกค้าไม่กลับมา<br/>Retention ~10%)
@@ -503,6 +524,14 @@ graph LR
         B2 -->|Cross-Promotion| C2(ได้ลูกค้าใหม่จาก Partner อื่น)
         C2 -->|Retention ~35%| D2(ยอดขายเพิ่ม & ยั่งยืน)
     end
+
+    style A1 fill:#FAFAFA,stroke:#6B7280
+    style B1 fill:#FEE2E2,stroke:#DC2626
+    style C1 fill:#FEE2E2,stroke:#DC2626
+    style A2 fill:#EEF2FF,stroke:#4F46E5
+    style B2 fill:#E0E7FF,stroke:#818CF8
+    style C2 fill:#E0E7FF,stroke:#818CF8
+    style D2 fill:#10B981,stroke:#10B981,color:#fff
 ```
 
 ### ค) Cross‑Promotion Automation
@@ -664,6 +693,7 @@ Month 9: Launch & Early Operations
 ### 7.5 Roadmap แบบ Visual
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#4F46E5', 'primaryTextColor': '#fff', 'primaryBorderColor': '#4F46E5', 'lineColor': '#6B7280', 'secondaryColor': '#818CF8', 'tertiaryColor': '#E0E7FF', 'fontFamily': 'IBM Plex Sans Thai, Inter, sans-serif', 'taskTextColor': '#1F2937', 'taskTextOutsideColor': '#1F2937', 'gridColor': '#E5E7EB', 'doneTaskBkgColor': '#10B981', 'critBkgColor': '#4F46E5', 'todayLineColor': '#DC2626'}}}%%
 gantt
     title KueKan Project Roadmap 2026
     dateFormat  YYYY-MM-DD
