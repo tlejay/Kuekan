@@ -365,14 +365,11 @@
         @media screen and (max-width: 768px) {
             .header {
                 padding: 10px 16px;
-                flex-wrap: wrap;
-                gap: 10px;
             }
 
             .header-left {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 4px;
+                flex: 1;
+                min-width: 0;
             }
 
             .logo {
@@ -382,19 +379,22 @@
             .subtitle {
                 font-size: 11px;
                 padding: 2px 8px;
-            }
-
-            .download-btn {
-                padding: 8px 14px;
-                font-size: 13px;
-            }
-
-            .download-btn span {
                 display: none;
             }
 
+            .download-btn {
+                padding: 8px 12px;
+                font-size: 0;
+                flex-shrink: 0;
+            }
+
+            .download-btn svg {
+                width: 18px;
+                height: 18px;
+            }
+
             .container {
-                padding: 90px 12px 40px;
+                padding: 70px 12px 40px;
             }
 
             .content {
@@ -467,16 +467,8 @@
 
         /* Extra small devices */
         @media screen and (max-width: 480px) {
-            .header-left {
-                max-width: 60%;
-            }
-
-            .subtitle {
-                font-size: 10px;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                max-width: 100%;
+            .logo {
+                font-size: 16px;
             }
 
             .content {
