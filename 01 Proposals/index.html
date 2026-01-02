@@ -35,6 +35,9 @@
             background: var(--bg);
             color: var(--text);
             line-height: 1.8;
+            -webkit-text-size-adjust: 100%;
+            -moz-text-size-adjust: 100%;
+            text-size-adjust: 100%;
         }
 
         /* Header */
@@ -423,15 +426,17 @@
             }
 
             .content table {
-                font-size: 12px;
+                font-size: 12px !important;
                 display: block;
                 overflow-x: auto;
-                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
             }
 
             .content th,
             .content td {
                 padding: 8px 10px;
+                font-size: 12px !important;
+                min-width: 80px;
             }
 
             .content blockquote {
@@ -487,12 +492,13 @@
             }
 
             .content table {
-                font-size: 11px;
+                font-size: 11px !important;
             }
 
             .content th,
             .content td {
                 padding: 6px 8px;
+                font-size: 11px !important;
             }
         }
 
