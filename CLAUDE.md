@@ -94,6 +94,7 @@
 /Kuekan
 ├── 00 Preparation/          # Business context and prep documents
 ├── 01 Proposals/            # Client proposals and pitches
+│   ├── Archived/            # ⚠️ OLD DOCUMENTS - DO NOT ANALYZE
 │   └── Presentations/       # PowerPoint/Keynote presentation files
 ├── 02 Requirements/         # Feature specs and requirements
 ├── 03 Design/               # UI/UX designs and wireframes
@@ -103,6 +104,10 @@
 ├── 07 Project Management/   # Timelines, meeting notes, status
 └── 08 Assets/               # Images, logos, brand assets
 ```
+
+### Excluded Folders
+The following folders contain outdated documents and should **NOT** be analyzed:
+- `01 Proposals/Archived/` - Legacy proposals (kept for reference only)
 
 ---
 
