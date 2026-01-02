@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Preview</title>
+    <title>DOSX Document Preview</title>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -558,7 +558,7 @@
         <div class="content" id="content">
             <div class="loading">
                 <div class="loading-spinner"></div>
-                <p>Loading markdown...</p>
+                <p>Loading document...</p>
             </div>
         </div>
     </main>
@@ -586,10 +586,10 @@
 
         // Initialize page elements from config
         function initPage() {
-            document.title = `${CONFIG.PROJECT_NAME} - Document Preview`;
+            document.title = `${CONFIG.PROJECT_NAME} - DOSX Document Preview`;
             document.getElementById('logo').textContent = CONFIG.PROJECT_NAME;
             document.getElementById('subtitle').textContent = `Crafted by ${CONFIG.COMPANY_NAME}`;
-            document.getElementById('footer-text').textContent = `${CONFIG.PROJECT_NAME} Document Preview | ${CONFIG.COMPANY_FULL}`;
+            document.getElementById('footer-text').textContent = `${CONFIG.PROJECT_NAME} - DOSX Document Preview | ${CONFIG.COMPANY_FULL}`;
         }
 
         // Initialize Mermaid
