@@ -260,6 +260,37 @@
             margin: 20px 0;
         }
 
+        .content aside {
+            background: linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 100%);
+            border-left: 4px solid var(--primary);
+            padding: 20px 24px;
+            margin: 24px 0;
+            border-radius: 0 12px 12px 0;
+            font-size: 14px;
+        }
+
+        .content aside p {
+            margin-bottom: 8px;
+        }
+
+        .content aside p:last-child {
+            margin-bottom: 0;
+        }
+
+        .content aside strong {
+            color: var(--primary);
+        }
+
+        .content aside ul,
+        .content aside ol {
+            margin-bottom: 8px;
+            padding-left: 20px;
+        }
+
+        .content aside li {
+            margin-bottom: 4px;
+        }
+
         /* Loading State */
         .loading {
             text-align: center;
@@ -402,6 +433,63 @@
             window.print();
         }
 
+        // Emoji shortcode mapping
+        const emojiMap = {
+            ':warning:': '⚠️', ':bulb:': '💡', ':info:': 'ℹ️', ':note:': '📝',
+            ':tip:': '💡', ':important:': '❗', ':check:': '✅', ':x:': '❌',
+            ':star:': '⭐', ':heart:': '❤️', ':fire:': '🔥', ':rocket:': '🚀',
+            ':thumbsup:': '👍', ':thumbsdown:': '👎', ':clap:': '👏', ':pray:': '🙏',
+            ':eyes:': '👀', ':point_right:': '👉', ':point_left:': '👈',
+            ':point_up:': '👆', ':point_down:': '👇', ':hand:': '✋',
+            ':chart:': '📊', ':chart_up:': '📈', ':chart_down:': '📉',
+            ':money:': '💰', ':dollar:': '💵', ':bag:': '💼', ':gift:': '🎁',
+            ':trophy:': '🏆', ':medal:': '🏅', ':crown:': '👑', ':gem:': '💎',
+            ':lock:': '🔒', ':unlock:': '🔓', ':key:': '🔑', ':shield:': '🛡️',
+            ':gear:': '⚙️', ':wrench:': '🔧', ':hammer:': '🔨', ':tools:': '🛠️',
+            ':link:': '🔗', ':pin:': '📌', ':bookmark:': '🔖', ':tag:': '🏷️',
+            ':calendar:': '📅', ':clock:': '🕐', ':hourglass:': '⏳', ':alarm:': '⏰',
+            ':phone:': '📱', ':email:': '📧', ':inbox:': '📥', ':outbox:': '📤',
+            ':file:': '📄', ':folder:': '📁', ':clipboard:': '📋', ':memo:': '📝',
+            ':pencil:': '✏️', ':pen:': '🖊️', ':book:': '📖', ':books:': '📚',
+            ':mag:': '🔍', ':bulb:': '💡', ':battery:': '🔋', ':plug:': '🔌',
+            ':computer:': '💻', ':desktop:': '🖥️', ':keyboard:': '⌨️', ':mouse:': '🖱️',
+            ':globe:': '🌐', ':earth:': '🌍', ':sun:': '☀️', ':moon:': '🌙',
+            ':cloud:': '☁️', ':rain:': '🌧️', ':snow:': '❄️', ':zap:': '⚡',
+            ':smile:': '😊', ':grin:': '😁', ':laugh:': '😂', ':wink:': '😉',
+            ':cool:': '😎', ':think:': '🤔', ':sad:': '😢', ':angry:': '😠',
+            ':party:': '🎉', ':tada:': '🎉', ':confetti:': '🎊', ':balloon:': '🎈',
+            ':100:': '💯', ':ok:': '👌', ':wave:': '👋', ':muscle:': '💪',
+            ':arrow_right:': '➡️', ':arrow_left:': '⬅️', ':arrow_up:': '⬆️', ':arrow_down:': '⬇️',
+            ':plus:': '➕', ':minus:': '➖', ':multiply:': '✖️', ':divide:': '➗',
+            ':question:': '❓', ':exclamation:': '❗', ':bangbang:': '‼️',
+            ':recycle:': '♻️', ':white_check_mark:': '✅', ':negative_squared_cross_mark:': '❎',
+            ':green_circle:': '🟢', ':red_circle:': '🔴', ':yellow_circle:': '🟡', ':blue_circle:': '🔵',
+            ':target:': '🎯', ':dart:': '🎯', ':game:': '🎮', ':dice:': '🎲',
+            ':user:': '👤', ':users:': '👥', ':building:': '🏢', ':house:': '🏠',
+            ':car:': '🚗', ':bus:': '🚌', ':train:': '🚆', ':plane:': '✈️',
+            ':ship:': '🚢', ':bike:': '🚲', ':walking:': '🚶', ':running:': '🏃'
+        };
+
+        function processEmojis(text) {
+            let result = text;
+            for (const [code, emoji] of Object.entries(emojiMap)) {
+                result = result.split(code).join(emoji);
+            }
+            return result;
+        }
+
+        function processAsideMarkdown(html) {
+            // Process <aside> tags to render markdown inside them
+            const asideRegex = /<aside>([\s\S]*?)<\/aside>/gi;
+            return html.replace(asideRegex, (match, content) => {
+                // Parse markdown inside aside
+                let parsedContent = marked.parse(content.trim());
+                // Process emoji shortcodes
+                parsedContent = processEmojis(parsedContent);
+                return `<aside>${parsedContent}</aside>`;
+            });
+        }
+
         async function renderMermaidDiagrams() {
             try {
                 // Find all mermaid divs and render them
@@ -433,7 +521,11 @@
                 if (markdown !== lastContent) {
                     lastContent = markdown;
                     mermaidCounter = 0; // Reset counter for new render
-                    const html = marked.parse(markdown);
+                    let html = marked.parse(markdown);
+
+                    // Process markdown inside <aside> tags
+                    html = processAsideMarkdown(html);
+
                     document.getElementById('content').innerHTML = html;
 
                     // Render mermaid diagrams after content is loaded
