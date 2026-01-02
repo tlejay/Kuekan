@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KueKan Proposal Preview</title>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -313,6 +314,21 @@
             font-size: 13px;
         }
 
+        /* Mermaid Diagram Styles */
+        .mermaid {
+            background: var(--bg);
+            padding: 24px;
+            border-radius: 8px;
+            margin: 24px 0;
+            text-align: center;
+            overflow-x: auto;
+        }
+
+        .mermaid svg {
+            max-width: 100%;
+            height: auto;
+        }
+
         /* Print Styles */
         @media print {
             .header {
@@ -358,12 +374,54 @@
         const REFRESH_INTERVAL = 3000; // 3 seconds
         let lastContent = '';
         let refreshTimer = null;
+        let mermaidCounter = 0;
+
+        // Initialize Mermaid
+        mermaid.initialize({
+            startOnLoad: false,
+            theme: 'default',
+            securityLevel: 'loose',
+            fontFamily: 'IBM Plex Sans Thai, Inter, sans-serif'
+        });
+
+        // Custom renderer for mermaid code blocks
+        const renderer = new marked.Renderer();
+        const originalCodeRenderer = renderer.code.bind(renderer);
+
+        renderer.code = function(code, language) {
+            // Handle both object format (newer marked) and string format (older marked)
+            let codeText = typeof code === 'object' ? code.text : code;
+            let lang = typeof code === 'object' ? code.lang : language;
+
+            if (lang === 'mermaid') {
+                mermaidCounter++;
+                return `<div class="mermaid" id="mermaid-${mermaidCounter}">${codeText}</div>`;
+            }
+            return originalCodeRenderer(code, language);
+        };
 
         // Configure marked options
         marked.setOptions({
             breaks: true,
-            gfm: true
+            gfm: true,
+            renderer: renderer
         });
+
+        async function renderMermaidDiagrams() {
+            try {
+                // Find all mermaid divs and render them
+                const mermaidDivs = document.querySelectorAll('.mermaid');
+                for (const div of mermaidDivs) {
+                    const id = div.id;
+                    const graphDefinition = div.textContent;
+                    div.innerHTML = ''; // Clear content before rendering
+                    const { svg } = await mermaid.render(id + '-svg', graphDefinition);
+                    div.innerHTML = svg;
+                }
+            } catch (error) {
+                console.error('Mermaid rendering error:', error);
+            }
+        }
 
         async function loadMarkdown() {
             try {
@@ -379,8 +437,12 @@
                 // Only update if content changed
                 if (markdown !== lastContent) {
                     lastContent = markdown;
+                    mermaidCounter = 0; // Reset counter for new render
                     const html = marked.parse(markdown);
                     document.getElementById('content').innerHTML = html;
+
+                    // Render mermaid diagrams after content is loaded
+                    await renderMermaidDiagrams();
 
                     // Update status
                     const now = new Date().toLocaleTimeString('th-TH');
