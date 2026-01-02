@@ -62,49 +62,33 @@
             color: var(--primary);
         }
 
-        .file-name {
-            font-size: 14px;
-            color: var(--text-muted);
-            padding: 4px 12px;
-            background: var(--bg);
-            border-radius: 4px;
-        }
-
-        .status {
+        .download-btn {
             display: flex;
             align-items: center;
             gap: 8px;
-            font-size: 13px;
-            color: var(--text-muted);
-        }
-
-        .status-dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: var(--success);
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
-        }
-
-        .refresh-btn {
-            padding: 8px 16px;
+            padding: 10px 20px;
             background: var(--primary);
             color: white;
             border: none;
-            border-radius: 6px;
+            border-radius: 8px;
             font-size: 14px;
             font-weight: 500;
             cursor: pointer;
-            transition: background 0.2s;
+            transition: all 0.2s;
+            font-family: inherit;
         }
 
-        .refresh-btn:hover {
+        .download-btn:hover {
             background: var(--primary-light);
+            transform: translateY(-1px);
+        }
+
+        .download-btn:active {
+            transform: translateY(0);
+        }
+
+        .download-btn svg {
+            flex-shrink: 0;
         }
 
         /* Main Content */
@@ -335,10 +319,15 @@
                 display: none;
             }
             .container {
-                padding-top: 0;
+                padding: 0;
+                max-width: 100%;
             }
             .content {
                 box-shadow: none;
+                padding: 0;
+            }
+            .footer {
+                display: none;
             }
         }
     </style>
@@ -347,13 +336,15 @@
     <header class="header">
         <div class="header-left">
             <span class="logo">KueKan</span>
-            <span class="file-name">Proposal_KueKan_PAO_NCC_McKinsey-Shorten.md</span>
         </div>
-        <div class="status">
-            <span class="status-dot"></span>
-            <span id="status-text">Auto-refresh: ON (3s)</span>
-            <button class="refresh-btn" onclick="loadMarkdown()">Refresh Now</button>
-        </div>
+        <button class="download-btn" onclick="downloadPDF()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download as PDF
+        </button>
     </header>
 
     <main class="container">
@@ -407,6 +398,10 @@
             renderer: renderer
         });
 
+        function downloadPDF() {
+            window.print();
+        }
+
         async function renderMermaidDiagrams() {
             try {
                 // Find all mermaid divs and render them
@@ -443,10 +438,6 @@
 
                     // Render mermaid diagrams after content is loaded
                     await renderMermaidDiagrams();
-
-                    // Update status
-                    const now = new Date().toLocaleTimeString('th-TH');
-                    document.getElementById('status-text').textContent = `Updated: ${now} | Auto-refresh: ON (3s)`;
                 }
             } catch (error) {
                 console.error('Error loading markdown:', error);
