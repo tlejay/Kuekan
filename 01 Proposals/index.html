@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Markdown Page</title>
+    <title>KueKan Proposal</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5/github-markdown.min.css">
     <style>
-        body {
+        .markdown-body {
             box-sizing: border-box;
             min-width: 200px;
             max-width: 980px;
@@ -16,19 +16,58 @@
         }
 
         @media (max-width: 767px) {
-            body {
+            .markdown-body {
                 padding: 15px;
             }
+        }
+
+        /* Mermaid styling adjustment */
+        .mermaid {
+            display: flex;
+            justify-content: center;
+            background-color: transparent;
         }
     </style>
 </head>
 
 <body class="markdown-body">
 
-    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@3/dist/zero-md.min.js"></script>
+    <!-- 
+      no-shadow: Render in Light DOM so global CSS works.
+    -->
+    <zero-md src="Proposal_KueKan_PAO_NCC_McKinsey-Shorten.md" no-shadow></zero-md>
 
-    <zero-md src="Proposal_KueKan_PAO_NCC_McKinsey-Shorten.md"></zero-md>
+    <script type="module">
+        import 'https://cdn.jsdelivr.net/gh/zerodevx/zero-md@3/dist/zero-md.min.js';
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
 
+        mermaid.initialize({ startOnLoad: false, theme: 'default' });
+
+        const app = document.querySelector('zero-md');
+
+        app.addEventListener('zero-md-rendered', async () => {
+            // 1. Find all mermaid code blocks
+            const nodes = document.querySelectorAll('pre > code.language-mermaid');
+
+            // 2. Convert them to divs for Mermaid processing
+            for (const node of nodes) {
+                const pre = node.parentElement;
+                const div = document.createElement('div');
+                div.classList.add('mermaid');
+                div.textContent = node.textContent;
+                pre.replaceWith(div);
+            }
+
+            // 3. Render diagrams
+            try {
+                await mermaid.run({
+                    querySelector: '.mermaid'
+                });
+            } catch (e) {
+                console.error('Mermaid rendering failed:', e);
+            }
+        });
+    </script>
 </body>
 
 </html>
