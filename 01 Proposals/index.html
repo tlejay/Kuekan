@@ -360,6 +360,12 @@
 
         /* Print Styles */
         @media print {
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+
             .header {
                 display: none;
             }
@@ -372,6 +378,15 @@
             .content {
                 box-shadow: none;
                 padding: 0;
+            }
+
+            .content th {
+                background: var(--primary) !important;
+                color: white !important;
+            }
+
+            .content aside {
+                background: #EEF2FF !important;
             }
 
             .footer {
